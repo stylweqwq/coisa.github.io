@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I LOVE YOU ELEANOR</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <audio id="musica-fundo" loop preload="auto">
+  <source src="../musicas/musga.mp3" type="audio/mpeg">
+  </audio>
+
+  <main class="mural" aria-label="Mural de folhas clicáveis">
+    <!-- Só por os textos sua bocó-->
+    <button class="folha" type="button" data-titulo="FOR YOU" data-texto="Querida Eleanor, eu fiz uma sessão de algumas coisas que eu escrevi para você aqui, eu espero que você goste do que ler, tem uma ordem, mas... vou deixar você adivinhar qual é.
+      Quero que saiba que acima de tudo eu amo você, quero você e que você é como meu sol, você é tudo para mim e a melhor namorada que eu poderia desejar. Amo tudo em você.
+      Você é linda, inteligente, maravilhosa, atenciosa, gentil e outras milhões de qualidades que eu nem consigo descrever. Você é meu mundo.
+      Quero que você sempre saiba que eu sou a pessoa mais feliz do mundo com você e somente com você. Eu te amo demais, minha gatenha
+      - Sty" data-imagem="">
+      <span class="papel"><strong>FOR YOU, MY LOVE </strong><small>Clique e você verá, amor</small></span>
+    </button>
+
+    <button class="folha" type="button" data-titulo="Anotações"
+      data-texto="Eleanor, desde que eu te conheci você abriu meus olhos, me fez reparar o quão energética, doidinha e daora de se conviver você é, me fez pensar o quão amável você é como pessoa e o quão incrível você é.
+      Eu tava perdida, você me ajudou da mesma forma que eu quis te ajudar, você me mostrou coisas, jogou coisas comigo que nenhuma outra pessoa quis fazer. Eu jogava sozinha os jogos e você sempre dispôs a fazer tudo comigo e me levar onde for.
+      Foi por isso que naquele dia eu te pedi em namoro de forma sincera, você é única e eu não me arrependo nenhum pouco do que eu disse, porque pra mim você é FODA, é sensacional e é incrível. Quero te mostrar todo o amor que eu posso dar para você.
+      Eu te amo do fundo do meu coração, pra mim você é meu mundo, quero muito ficar com você, abraçar você, beijar você e te fazer se sentir amada e feliz todos os dias, pois eu quero que você sempre saiba que eu quero ser a sua segunda casa. Minha mozona fofa, eu te idolatro e amo tudo em você."
+      data-imagem="../imagens/aceita.png">
+      <span class="papel"><strong>Anotações</strong><small>Clique para ser mais fofa do que já é</small></span>
+    </button>
+
+    <button class="folha" type="button" data-titulo="Uma Memória"
+      data-texto="Foi recente, mas eu não me canso de ver essa arte que pedi de nós duas fazendo coraçãozinho. Me encanta o coração todas às vezes que lembro de você toda bobinha vendo que eu pedi ela para você.
+      Me encanta também saber que você amou e eu sempre lembro da gente pois está no wallpaper do meu celular a minha parte dessa imagem.
+      Me pego pensando sempre o quão fofa você é, o qual legal você é justamente me entender e que também amou isso, você deixou não só aquele dia meu mais feliz, como todos a seguir. Obrigada por existir, minha gatenha."
+      data-imagem="../imagens/icon_amarelo.png">
+      <span class="papel"><strong>...</strong><small></small></span>
+    </button>
+
+    <button class="folha" type="button" data-titulo="Carta"
+      data-texto="Eleanor, eu lembro daquela hora que você disse para mim que queria se casar comigo e ter filhos comigo. Eu fiquei toda boba por isso a ponto de até hoje eu acabo lembrando de muitas coisinhas que você fala pra mim.
+      Naquele dia eu fixei a mensagem e pensei realmente em só ficar spammando SIM para você sem parar, porque para mim você é perfeita. Mesmo em outro lugar, você é PERFEITA e eu não quero ficar longe de você nem por um momento
+      Eu quero me casar com você Elea, você me faria a pessoa mais feliz do mundo, me faria a pessoa mais amada do planeta porque é com você, obviamente eu aceitaria. Eu não me dou bem com crianças,  mas ccom você, eu poderia sim
+      ter filhos com você e nós sermos felizes, como uma família. Então sim, eu aceito e sempre vou aceitar ter mini diabinhos nosso para cuidar com você, mas tem que ser com você, minha mozona."
+      data-imagem="../imagens/print_um.png">
+      <span class="papel"><strong>Contrato?</strong><small>Clique para assinar um contrato de casamento
+          comigo</small></span>
+    </button>
+
+    <button class="folha" type="button" data-titulo="Obrigada" data-texto="E este é o final praticamente. Obrigada Elea, por ficar 1 mês inteirinho comigo e me aturando sempre. Mesmo com minhas pecuinhas, você me ama.
+      E eu não tenho palavras o quão apaixonada eu fiquei somente pelo seu carinho comigo, pelo seu coração enorme e por você ser o amor da minha vida. Elea, obrigada por tudo
+      sem você eu não vivo, não sobrevivo. É somente com você que eu quero ficar, você me ensinou a me divertir e a amar você de uma forma surpreendente e rápida, porque você é muito cativante.
+      Obrigada por aparecer na minha vida mô, espero que esse 1 mês vire 1 ano e que este 1 ano vire eternidade. ^^"
+      data-imagem="../imagens/par.png">
+      <span class="papel"><strong>Obrigada</strong><small>...</small></span>
+    </button>
+  </main>
+
+  <dialog class="visualizador" id="visualizador" aria-label="Folha ampliada">
+    <article class="folha-grande">
+      <button class="fechar" type="button" aria-label="Fechar folha">×</button>
+      <div class="conteudo-folha">
+        <h2 id="titulo-ampliado"></h2>
+        <img class="imagem-folha" id="imagem-ampliada" alt="Imagem da folha">
+        <p id="texto-ampliado"></p>
+      </div>
+    </article>
+  </dialog>
+</body>
+
+</html>
